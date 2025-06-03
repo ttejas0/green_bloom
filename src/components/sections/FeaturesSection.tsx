@@ -1,6 +1,6 @@
-import React from 'react';
-import { Package, Sprout, Home, ChefHat as Chef } from 'lucide-react';
-import Container from '../ui/Container';
+import React from "react";
+import { Package, Sprout, Home, ChefHat as Chef } from "lucide-react";
+import Container from "../ui/Container";
 
 interface FeatureProps {
   icon: React.ReactNode;
@@ -25,25 +25,29 @@ const FeaturesSection: React.FC = () => {
     {
       icon: <Package className="h-8 w-8" />,
       title: "Weekly Veggie Box",
-      description: "Customizable, seasonal produce delivered directly to your doorstep every week, harvested at peak freshness."
+      description:
+        "Customizable, seasonal produce delivered directly to your doorstep every week, harvested at peak freshness.",
     },
     {
       icon: <Sprout className="h-8 w-8" />,
       title: "Specialty Microgreens",
-      description: "Nutrient-packed microgreens grown to order, perfect for elevating your culinary creations with intense flavors."
+      description:
+        "Nutrient-packed microgreens grown to order, perfect for elevating your culinary creations with intense flavors.",
     },
     {
       icon: <Home className="h-8 w-8" />,
       title: "Grow-Your-Own Kits",
-      description: "Easy-to-use hydroponic starter kits for home gardening, complete with everything you need to grow greens at home."
+      description:
+        "Easy-to-use hydroponic starter kits for home gardening, complete with everything you need to grow greens at home.",
     },
     {
       icon: <Chef className="h-8 w-8" />,
       title: "Restaurant Supply",
-      description: "Bulk, tailored delivery for chefs and local restaurants seeking the freshest ingredients for their menus."
-    }
+      description:
+        "Bulk, tailored delivery for chefs and local restaurants seeking the freshest ingredients for their menus.",
+    },
   ];
-  
+
   return (
     <section className="py-16 md:py-24 bg-white" id="products">
       <Container>
@@ -52,10 +56,11 @@ const FeaturesSection: React.FC = () => {
             Fresh Produce, Grown Smarter
           </h2>
           <p className="text-lg text-gray-600">
-            We combine innovative hydroponic farming with sustainable practices to deliver the freshest, most nutritious produce possible.
+            We combine innovative hydroponic farming with sustainable practices
+            to deliver the freshest, most nutritious produce possible.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <Feature
@@ -66,14 +71,18 @@ const FeaturesSection: React.FC = () => {
             />
           ))}
         </div>
-        
+
         <div className="mt-16 md:mt-24 lg:mt-32 grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h3 className="text-2xl md:text-3xl font-bold mb-6">
               The Future of Urban Farming
             </h3>
             <p className="text-gray-600 mb-6">
-              Our state-of-the-art vertical farms use 90% less water than traditional agriculture while producing higher yields in a fraction of the space. By growing locally in urban environments, we eliminate long supply chains and deliver produce at peak freshness.
+              Our state-of-the-art vertical farms use 90% less water than
+              traditional agriculture while producing higher yields in a
+              fraction of the space. By growing locally in urban environments,
+              we eliminate long supply chains and deliver produce at peak
+              freshness.
             </p>
             <ul className="space-y-3">
               {[
@@ -81,7 +90,7 @@ const FeaturesSection: React.FC = () => {
                 "No pesticides or herbicides ever",
                 "Grows year-round regardless of weather",
                 "Produces minimal waste and carbon footprint",
-                "Creates local jobs in urban communities"
+                "Creates local jobs in urban communities",
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <svg
@@ -102,9 +111,9 @@ const FeaturesSection: React.FC = () => {
             </ul>
           </div>
           <div className="relative rounded-2xl overflow-hidden shadow-xl">
-            <img 
-              src="https://images.pexels.com/photos/2132250/pexels-photo-2132250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-              alt="Vertical farming" 
+            <img
+              src="Vertical_farming.webp"
+              alt="Vertical farming"
               className="w-full h-auto"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -112,7 +121,9 @@ const FeaturesSection: React.FC = () => {
               <span className="bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">
                 Sustainable Farming
               </span>
-              <h4 className="text-xl font-bold mt-2">Our Vertical Farming System</h4>
+              <h4 className="text-xl font-bold mt-2">
+                Our Vertical Farming System
+              </h4>
             </div>
           </div>
         </div>
