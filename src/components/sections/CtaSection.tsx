@@ -4,7 +4,10 @@ import Button from "../ui/Button";
 
 const CtaSection: React.FC = () => {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-green-600 to-green-800">
+    <section
+      className="py-16 md:py-24 bg-gradient-to-br from-green-600 to-green-800"
+      id="contact"
+    >
       <Container>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
